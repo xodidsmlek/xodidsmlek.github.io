@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "default..css",
+	"file": "default.css",
 	"sources": [
-		"default..scss",
+		"default.scss",
 		"_sass/default.scss"
 	],
 	"sourcesContent": [
