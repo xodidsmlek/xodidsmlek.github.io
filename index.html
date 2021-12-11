@@ -3,7 +3,7 @@
 layout : default
 title : 타이틀
 boolean_test : true
-footer_variable : footer.html
+test_variable : test.html
 ---
 <h1>Hello World!</h1>
 <div>서버 실행 : bundle exec jekyll serve</div>
@@ -18,15 +18,16 @@ footer_variable : footer.html
 </div>
 <div>대문자 출력 : {{ "hi" | capitalize }}</div>
 <div>소문자 출력 : {{ "Hi" | downcase }}</div>
+<div>config.yml의 변수 불러오기 : {{ site.description }}</div>
 
 
 <div>include : </div>
-{% include footer.html %}
+{% include test.html %}
 
 <div>상대경로 파일 삽입 (상위 지정 불가능) : </div>
-{% include_relative _includes/footer.html %}
+{% include_relative _includes/test.html %}
 
 <div>변수화한 Include 방법 : </div>
-{% if page.footer_variable %} 
-  {% include {{page.footer_variable}} %}
+{% if page.test_variable %} 
+  {% include {{page.test_variable}} %}
 {% endif %}
