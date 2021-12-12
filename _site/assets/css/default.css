@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * { margin: 0px; padding: 0px; font-family: 'RIDIBatang','Youth','JejuGothic', "맑은 고딕"; border-spacing: 0px; }
 
+html { width: 1700px; }
+
 @font-face { font-family: Youth; src: url("../fonts/Youth.ttf") format("truetype"); font-weight: normal; }
 
 @font-face { font-family: JejuGothic; src: url("../fonts/JejuGothic.ttf") format("truetype"); font-weight: normal; }
@@ -9,7 +11,7 @@
 
 /*** Layout Start ***/
 /** Top_Navigation **/
-.top_nav { width: 1700px; height: 250px; }
+.top_nav { width: 100%; height: 250px; }
 
 /* 프로필 */
 .top_nav .profile { width: 100px; height: 100px; border-radius: 100%; box-shadow: 0px 0px 6px 1px #aaa; overflow: hidden; position: absolute; top: 50px; left: 400px; }
@@ -29,13 +31,16 @@
 .top_nav .menu td { display: none; }
 
 /** Left_Navigation **/
-.left_nav { width: 400px; height: 500px; background-color: green; position: absolute; top: 250px; left: 0px; }
+.left_nav { width: 400px; height: 500px; background-color: green; float: left; }
 
 /** Right_Navigation **/
-.right_nav { width: 400px; height: 500px; background-color: red; position: absolute; top: 250px; right: 0px; }
+.right_nav { width: 400px; height: 500px; background-color: red; float: left; }
 
 /** Content **/
-.content { width: 900px; position: absolute; top: 250px; left: 400px; z-index: 1; }
+.content { width: 900px; min-height: 500px; float: left; }
+
+/** Footer **/
+.footer { width: 100%; height: 50px; background-color: blue; position: fixed; bottom: 0px; }
 
 /*** Layout End ***/
 
