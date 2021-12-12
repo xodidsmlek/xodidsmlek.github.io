@@ -1,0 +1,16 @@
+<div class="content">
+    <!-- Board -->
+    {% if include.category == "board" %}
+        {{ include.content }}
+    {% endif %}
+
+    <!-- About -->
+    {% if include.category == "about" %}
+        {{ include.content }}
+    {% endif %}
+
+    <!-- Record -->
+    {% if include.category == "record" %}
+        {{ include.content }}
+    {% endif %}
+</div>

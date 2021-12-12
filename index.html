@@ -4,6 +4,7 @@ layout : default
 title : 타이틀
 boolean_test : true
 test_variable : test.html
+category : board
 ---
 <h1>Hello World!</h1>
 <div>서버 실행 : bundle exec jekyll serve</div>
@@ -19,6 +20,7 @@ test_variable : test.html
 <div>대문자 출력 : {{ "hi" | capitalize }}</div>
 <div>소문자 출력 : {{ "Hi" | downcase }}</div>
 <div>config.yml의 변수 불러오기 : {{ site.description }}</div>
+<div>index의 페이지카테고리 : {{page.category}}</div>
 
 
 <div>include : </div>

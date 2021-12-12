@@ -6,11 +6,9 @@
     <link rel="stylesheet" href="/assets/css/default.css">
   </head>
   <body>
-    {%include top_nav.html%}
+    {%include top_nav.html category=page.category%}
     {%include left_nav.html%}
-    <div class="content">
-      {{ content }}
-    </div>
+    {%include content.html category=page.category content=content%}
     {%include right_nav.html%}
     {%include footer.html%}
   </body>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+category : about
 ---
 # About page
 

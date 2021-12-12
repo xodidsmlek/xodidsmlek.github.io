@@ -95,7 +95,6 @@ html{
 .left_nav{
     width: 400px;
     height: 500px;
-    background-color: green;
     
     // 위치
     float: left;
@@ -105,7 +104,6 @@ html{
 .right_nav{
     width: 400px;
     height: 500px;
-    background-color: red;
 
     // 위치
     float: left;
@@ -124,8 +122,6 @@ html{
 .footer{
     width: 100%;
     height: 50px;
-
-    background-color: blue;
 
     // 위치
     position: fixed;

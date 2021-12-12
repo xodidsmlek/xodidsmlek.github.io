@@ -31,16 +31,16 @@ html { width: 1700px; }
 .top_nav .menu td { display: none; }
 
 /** Left_Navigation **/
-.left_nav { width: 400px; height: 500px; background-color: green; float: left; }
+.left_nav { width: 400px; height: 500px; float: left; }
 
 /** Right_Navigation **/
-.right_nav { width: 400px; height: 500px; background-color: red; float: left; }
+.right_nav { width: 400px; height: 500px; float: left; }
 
 /** Content **/
 .content { width: 900px; min-height: 500px; float: left; }
 
 /** Footer **/
-.footer { width: 100%; height: 50px; background-color: blue; position: fixed; bottom: 0px; }
+.footer { width: 100%; height: 50px; position: fixed; bottom: 0px; }
 
 /*** Layout End ***/
 
