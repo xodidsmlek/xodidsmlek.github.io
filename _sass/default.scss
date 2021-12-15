@@ -75,20 +75,42 @@ html{
     width: 900px;
     height: 50px;
     border-bottom: 0.5px #ddd solid;
-    table-layout: fixed;
-
+    overflow: hidden;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
     // 위치
     position: absolute;
     top: 200px;
     left: 400px;
 }
 
+.top_nav .menu table{
+    width: 100%;
+    table-layout: fixed;
+
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none
+}
+
 .top_nav .menu th, .top_nav .menu td{
     height: 50px;
 }
 
-.top_nav .menu td{
-    display: none;
+.top_nav .menu td:hover {
+    background-color: #efefef;
+}
+
+.top_nav .menu td:active {
+    background-color: #eaeaea;
+    box-shadow: 0px 0px 5px inset #ccc;
+}
+
+.top_nav .menu tbody{
+    height: 0px;
+    text-align: center;
 }
 
 /** Left_Navigation **/
@@ -126,5 +148,20 @@ html{
     // 위치
     position: fixed;
     bottom: 0px;
+}
+
+/** Index **/
+.index{
+    width: 90%;
+    min-height: 800px;
+    table-layout: fixed;
+
+    border: solid 1px #ddd;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.index .layout{
+    height: 50%;
 }
 /*** Layout End ***/
