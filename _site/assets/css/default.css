@@ -28,7 +28,7 @@ html { width: 1700px; }
 .top_nav .description div { margin-bottom: 15px; }
 
 /* 상단메뉴 */
-.top_nav .menu { width: 900px; height: 50px; border-bottom: 0.5px #ddd solid; overflow: hidden; transition-duration: 0.5s; cursor: pointer; margin-left: 400px; }
+.top_nav .menu { width: 900px; height: 50px; border-bottom: 0.5px #ddd solid; overflow: hidden; transition-duration: 0.5s; cursor: pointer; position: relative; margin-left: 400px; z-index: 1; }
 
 .top_nav .menu table { width: 100%; table-layout: fixed; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
