@@ -37,6 +37,12 @@ html{
 }
 
 /* 프로필 */
+.top_nav .profile_box{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+
 .top_nav .profile{
     width: 100px;
     height: 100px;
@@ -45,10 +51,9 @@ html{
     overflow: hidden;
 
     // 위치
-    position: absolute;
-    top: 50px;
-    left: 400px;
-}
+    margin-top: 50px;
+    float: right;
+}  
 
 .top_nav .profile img{
     width: 100%;
@@ -56,14 +61,19 @@ html{
 }
 
 /* 설명 */
+.top_nav .description_box{
+    width: auto;
+    height: 200px;
+}
+
 .top_nav .description{
     width: 700px;
     height: 100px;
 
     // 위치
-    position: absolute;
-    top: 50px;
-    left: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
 }
 
 .top_nav .description div{
@@ -78,11 +88,9 @@ html{
     overflow: hidden;
     transition-duration: 0.5s;
     cursor: pointer;
-    
+
     // 위치
-    position: absolute;
-    top: 200px;
-    left: 400px;
+    margin-left: 400px;
 }
 
 .top_nav .menu table{
@@ -152,13 +160,12 @@ html{
 
 /** Index **/
 .index{
-    width: 90%;
+    width: 100%;
     min-height: 800px;
     table-layout: fixed;
 
     border: solid 1px #ddd;
     margin-top: 50px;
-    margin-left: 5%;
 }
 
 .index .layout{

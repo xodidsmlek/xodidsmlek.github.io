@@ -1,11 +1,16 @@
 <div class="top_nav">
+    <div class="profile_box">
     {% if include.category != "about" %}
         <div class="profile"><a href="/about.html"><img src="/assets/images/logo.jpg"></a></div>
     {% endif %}
     {% if include.category == "about" %}
         <div class="profile"><a href="/index.html"><img src="/assets/images/about_logo.jpg"></a></div>
     {% endif %}
-    <div class="description">{{ site.description }}</div>
+    </div>
+    <div class="description_box">
+        <div class="description">{{ site.description }}</div>
+    </div>
+    
     <div id="top_menu" class="menu">
         <table id="top_menu_table">
             <thead>
