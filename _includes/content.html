@@ -2,10 +2,8 @@
 <div class="menu_tree">
     <div>
         <a href="/index.html">Home</a>
-        {% if page.url == "/" %}
-            
-        {% elsif page.url == "/about.html" %}
-
+        {% if page.url == "/about.html" %}
+        {% elsif page.url == "/" %}
         {% else %}
             > <a href="{{page.url}}">{{page.category_name}}</a>
         {% endif %}
