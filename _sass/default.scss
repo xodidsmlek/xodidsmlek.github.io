@@ -85,6 +85,7 @@ html{
     width: 900px;
     height: 50px;
     border-bottom: 0.5px #ddd solid;
+    background-color: #fff;
     overflow: hidden;
     transition-duration: 0.5s;
     cursor: pointer;
@@ -107,6 +108,26 @@ html{
 
 .top_nav .menu th, .top_nav .menu td{
     height: 50px;
+}
+
+.top_nav .menu th a, .top_nav .menu td a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.top_nav .menu th a:link, .top_nav .menu td a:link{
+    color: black;
+}
+
+.top_nav .menu th a:visited, .top_nav .menu td a:visited{
+    color: black;
+}
+
+.top_nav .menu th a div, .top_nav .menu td a div{
+    padding: 17px 0px;
 }
 
 .top_nav .menu td:hover {
