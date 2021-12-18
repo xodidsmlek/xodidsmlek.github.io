@@ -36,6 +36,7 @@ function top_menu_mouseover(height){
     top_menu.style.height               = height+'px';
     top_menu.style.backgroundColor      = '#fcfcfc';
     top_menu.style.boxShadow            = '0px 0px 5px #e3e3e3 ';
+    top_menu.style.padding              = '20px 0px';
 }
 
 function top_menu_mouseout(scrollVal){
@@ -43,7 +44,8 @@ function top_menu_mouseout(scrollVal){
         top_menu.style.backgroundColor  = '#fff';
         top_menu.style.boxShadow        = 'none';
     }
-    top_menu.style.height               = '50px';
+    top_menu.style.height               = '51.5px';
+    top_menu.style.padding              = '0px';
     
 }
 

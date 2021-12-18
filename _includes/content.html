@@ -1,3 +1,17 @@
+<div class="blank"></div>
+<div class="menu_tree">
+    <div>
+        <a href="/index.html">Home</a>
+        {% if page.url == "/" %}
+            
+        {% elsif page.url == "/about.html" %}
+
+        {% else %}
+            > <a href="{{page.url}}">{{page.category_name}}</a>
+        {% endif %}
+    </div>
+</div>
+    
 <div class="content">
     <!-- Board -->
     {% if include.category == "index" %}
