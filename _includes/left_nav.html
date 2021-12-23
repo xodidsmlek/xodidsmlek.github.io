@@ -1,3 +1,9 @@
 <div class="left_nav">
-
+    <div class="one_depth">이력
+        <div class="two_depth">2020
+            {% for 2020 in site.categories.2020 %}
+                <div class="three_depth"><a href="{{2020.url}}">{{2020.title}}</a></div>
+            {% endfor %}
+        </div>
+    </div>
 </div>

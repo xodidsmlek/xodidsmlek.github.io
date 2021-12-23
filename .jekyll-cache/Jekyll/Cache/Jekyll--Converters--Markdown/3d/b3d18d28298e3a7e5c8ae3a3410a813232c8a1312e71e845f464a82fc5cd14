@@ -1,4 +1,5 @@
-I"�<div>서버 실행 : bundle exec jekyll serve</div>
+I"�
+<div>서버 실행 : bundle exec jekyll serve</div>
 <div>관련 문법 : Liquid</div>
 <div>Jekyll 튜토리얼 : http://jekyllrb-ko.github.io/</div>
 <div>Jekyll에서 사용가능한 유용한 변수 : http://jekyllrb-ko.github.io/docs/variables/</div>
@@ -27,7 +28,17 @@
 
 <div>카테고리s : record</div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div&gt;카테고리1 : test , url : /record/2021/12/12/test.html, record&lt;/div&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div&gt;카테고리1 : 2020 , url : /record/2020/2021/12/12/test.html, record&lt;/div&gt;
+</code></pre></div></div>
+
+<div>카테고리s : 2020</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div&gt;카테고리1 : 2020 , url : /record/2020/2021/12/12/test.html, record&lt;/div&gt;
+</code></pre></div></div>
+
+<div>카테고리s : 2020</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div&gt;카테고리1 : 2020 , url : /record/2020/2021/12/12/test.html, record&lt;/div&gt;
 </code></pre></div></div>
 
 <div>카테고리s : playground</div>
