@@ -7,7 +7,10 @@
 
 body{
     width: 100%;
-
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none
 }
 
 html{
@@ -109,7 +112,7 @@ a:visited{
     height: 51.5px;
     background-color: #fff;
     overflow: hidden;
-    transition-duration: 0.5s;
+    transition: 0.5s ease-out;
     cursor: pointer;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -129,11 +132,6 @@ a:visited{
 .top_nav .menu table{
     width: 100%;
     table-layout: fixed;
-
-    -webkit-user-select:none; 
-    -moz-user-select:none; 
-    -ms-user-select:none; 
-    user-select:none
 }
 
 .top_nav .menu th, .top_nav .menu td{
@@ -167,7 +165,7 @@ a:visited{
 /** Left_Navigation **/
 .left_nav{
     width: 240px;
-    height: 500px;
+    min-height: 300px;
     margin-left: 50px;
     margin-right: 50px;
     box-shadow:  0px 0px 3px 1px #aaa;
@@ -187,17 +185,39 @@ a:visited{
 
 .one_depth{
     overflow: hidden;
+    font-weight: bold; 
 }
 
 .two_depth{
-    overflow: hidden;
-    padding-top: 5px;
-    padding-left: 15px;
+    width: auto;
+    margin-left: 15px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight: normal;
 }
 
 .three_depth{
-    padding-top: 5px;
-    padding-left: 15px;
+    overflow: hidden;
+    font-size: 0.8em;
+    margin-left: 30px;
+    transition: 0.5s ease-out;
+}
+
+.depth_hide{
+    height: 0px;
+}
+
+.three_depth a{
+    color: #888;
+}
+
+.three_depth a:hover{
+    color: black;
+}
+
+#left_nav .select {
+    color: red;
+    cursor: auto    ;
 }
 
 /** Right_Navigation **/
@@ -228,6 +248,7 @@ a:visited{
 
 .menu_tree div{
     font-size: 0.8em;
+    text-shadow: 0px;
     float: right;
 }
 
@@ -264,7 +285,8 @@ a:visited{
     table-layout: fixed;
 
     border: solid 1px #ddd;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     margin-top: 50px;
 }
 
