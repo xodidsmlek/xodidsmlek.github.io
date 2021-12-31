@@ -1,8 +1,15 @@
 window.onload = function(){
     // 현재 스크롤 값
     let current_scroll_value = document.documentElement.scrollTop;
+    let one_depth = document.getElementsByClassName('one_depth');
     let two_depth = document.getElementsByClassName('two_depth');
     let select = document.getElementById('select');
+
+    console.log(one_depth);
+
+    for(i=0; i<one_depth.length; i++){
+        
+    }
 
     if(select != null)select.parentNode.classList.remove('depth_hide');
 
