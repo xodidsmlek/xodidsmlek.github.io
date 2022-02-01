@@ -21,8 +21,8 @@
     {% if include.category == "board" %}
     <div class="board">
         <h1>{{page.title}}</h1>
-        <div>{{page.date}}</div>
-        <hr>
+        <div class="date">{{page.date}}</div>
+        <div class="boundary"></div>
         {{ include.content }}
     </div>
     {% endif %}
@@ -34,7 +34,12 @@
 
     <!-- Record -->
     {% if include.category == "record" %}
+    <div class="record">
+        <h1>{{page.title}}</h1>
+        <div class="date">{{page.date}}</div>
+        <div class="boundary"></div>
         {{ include.content }}
+    </div>
     {% endif %}
 
     <!-- Playground -->

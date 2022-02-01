@@ -5,8 +5,6 @@ window.onload = function(){
     let two_depth = document.getElementsByClassName('two_depth');
     let select = document.getElementById('select');
 
-    console.log(one_depth);
-
     for(i=0; i<one_depth.length; i++){
         
     }
@@ -17,7 +15,7 @@ window.onload = function(){
         top_menu.style.position         = 'fixed';
         top_menu.style.top              = '0px';
         top_menu.style.backgroundColor  = '#fcfcfc';
-        top_menu.style.boxShadow        = '0px 0px 5px #e3e3e3 ';
+        top_menu.style.boxShadow        = '0px 0px 10px 2px #ccc ';
     }
 
     top_menu.addEventListener('mouseover', function(event){
@@ -55,7 +53,7 @@ window.onload = function(){
 function top_menu_mouseover(height){
     top_menu.style.height               = height+'px';
     top_menu.style.backgroundColor      = '#fcfcfc';
-    top_menu.style.boxShadow            = '0px 0px 5px #e3e3e3 ';
+    top_menu.style.boxShadow            = '0px 0px 10px 2px #ccc ';
     top_menu.style.padding              = '20px 20px';
     top_menu.style.marginLeft           = '380px';
 }
@@ -76,7 +74,7 @@ function top_menu_fixed(scrollVal){
         top_menu.style.position         = 'fixed';
         top_menu.style.top              = '0px';
         top_menu.style.backgroundColor  = '#fcfcfc';
-        top_menu.style.boxShadow        = '0px 0px 5px #e3e3e3 ';
+        top_menu.style.boxShadow        = '0px 0px 10px 2px #ccc ';
     } else {
         top_menu.style.position         = 'relative';
         top_menu.style.backgroundColor  = '#fff';

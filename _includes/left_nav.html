@@ -27,6 +27,17 @@
     <br>
     <!--게시판-->
     <div class="one_depth"><p>게시판</p>
+        <div class="two_depth">개념</div>
+        <div class="three_depth depth_hide">
+            {% for javacript in site.categories.concept %}
+                {% if page.url != concept.url %}
+                    <div><a href="{{concept.url}}">{{concept.title}}</a></div>
+                {% else  %}
+                    <div id="select">{{concept.title}}</div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
         <div class="two_depth">HTML</div>
         <div class="three_depth depth_hide">
             {% for html in site.categories.html %}
